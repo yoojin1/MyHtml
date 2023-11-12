@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+}
+span{ /*span이라는 모든 태그 [3]*/
+    color: red;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: 60px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    margin: 0;
+    padding: 5px;
+}
+.js{  /*class가 js인 것만 [2]*/
+    font-weight: bold;
+    color:aqua;
+}
+#first{ /*id가 first인 것(꼭 한개만 존재할 것) 우선순위 [1]*/
+    color: aquamarine;
+}
+#grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+#html_text{
+    border-left: 1px solid gray;
+    padding: 20px;
+}
+@media(max-width:800px){
+    #grid{
+        display: block;
+    }
+    #html_text{
+    border-left: none;
+    padding: 20px;
+}
+}
